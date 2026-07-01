@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robos Industriais e IoT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Robos Industriais 4.0</h1>
+    <button id="botaoMenu">Menu</button>
+    <nav id="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#conceitos">Conceitos</a>
+      <a href="#catalogo">Robos</a>
+      <a href="#comparativo">Comparativo</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div>
+        <p class="destaque">Catalogo tecnico e educativo</p>
+        <h2>Robos industriais na Industria 4.0</h2>
+        <p>Website sobre modelos de robos industriais, automacao e integracao com Internet das Coisas (IoT).</p>
+      </div>
+      <img src="assets/img/industria.svg" alt="Ilustracao de robotica industrial">
+    </section>
+
+    <section class="conceitos" id="conceitos">
+      <article>
+        <h3>Internet das Coisas (IoT)</h3>
+        <p>IoT e a conexao de maquinas, sensores e sistemas a redes de comunicacao para coletar, trocar e analisar dados em tempo real.</p>
+      </article>
+      <article>
+        <h3>Robotica Industrial</h3>
+        <p>Robotica industrial usa manipuladores programaveis para executar tarefas como soldagem, montagem, pintura, transporte e inspecao.</p>
+      </article>
+      <article>
+        <h3>Automacao Industrial</h3>
+        <p>A automacao aumenta produtividade, repetibilidade, seguranca e qualidade nos processos produtivos.</p>
+      </article>
+      <article>
+        <h3>Robotica + IoT</h3>
+        <p>Robos conectados enviam dados de ciclo, falhas, energia e manutencao para CLPs, supervisores e dashboards industriais.</p>
+      </article>
+    </section>
+
+    <section class="area-filtros" id="catalogo">
+      <div>
+        <p class="destaque">Modelos cadastrados</p>
+        <h2>Catalogo de robos</h2>
+      </div>
+      <div class="filtros">
+        <input id="campoPesquisa" type="text" placeholder="Pesquisar robo, aplicacao ou fabricante">
+        <select id="campoFiltro">
+          <option value="todos">Todas as aplicacoes</option>
+          <option value="montagem">Montagem</option>
+          <option value="soldagem">Soldagem</option>
+          <option value="paletizacao">Paletizacao</option>
+          <option value="embalagem">Embalagem</option>
+          <option value="inspecao">Inspecao</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="listaRobos" class="lista-robos"></section>
+
+    <section class="comparativo" id="comparativo">
+      <h2>Comparativo rapido</h2>
+      <table>
+        <thead>
+          <tr><th>Tipo</th><th>Movimento</th><th>Ponto forte</th><th>Aplicacao comum</th></tr>
+        </thead>
+        <tbody id="tabelaComparativo"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <button id="voltarTopo" class="voltar-topo">Topo</button>
+  <script src="script.js"></script>
+</body>
+</html>
