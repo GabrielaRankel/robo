@@ -52,8 +52,9 @@
         <p class="destaque">Modelos cadastrados</p>
         <h2>Catalogo de robos</h2>
       </div>
+
       <div class="filtros">
-        <input id="campoPesquisa" type="text" placeholder="Pesquisar robo, aplicacao ou fabricante">
+        <input id="campoPesquisa" type="text" placeholder="Pesquisar robo, aplicacao ou fabricante" />
         <select id="campoFiltro">
           <option value="todos">Todas as aplicacoes</option>
           <option value="montagem">Montagem</option>
@@ -63,17 +64,157 @@
           <option value="inspecao">Inspecao</option>
         </select>
       </div>
+
     </section>
 
-    <section id="listaRobos" class="lista-robos"></section>
+    <section class="lista-robos" id="listaRobos">
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/cartesiano.svg" alt="Imagem do Robo Cartesiano">
+          <div>
+            <h3>Robo Cartesiano</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">3 eixos</span>
+              <span class="etiqueta">precisao</span>
+              <span class="etiqueta">paletizacao</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/cartesiano.html">Abrir pagina</a>
+        </div>
+      </article>
+
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/scara.svg" alt="Imagem do Robo SCARA">
+          <div>
+            <h3>Robo SCARA</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">4 eixos</span>
+              <span class="etiqueta">rapido</span>
+              <span class="etiqueta">montagem</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/scara.html">Abrir pagina</a>
+        </div>
+      </article>
+
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/articulado.svg" alt="Imagem do Robo Articulado">
+          <div>
+            <h3>Robo Articulado</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">6 eixos</span>
+              <span class="etiqueta">flexivel</span>
+              <span class="etiqueta">soldagem</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/articulado.html">Abrir pagina</a>
+        </div>
+      </article>
+
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/cilindrico.svg" alt="Imagem do Robo Cilindrico">
+          <div>
+            <h3>Robo Cilindrico</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">base giratoria</span>
+              <span class="etiqueta">vertical</span>
+              <span class="etiqueta">maquinas</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/cilindrico.html">Abrir pagina</a>
+        </div>
+      </article>
+
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/delta.svg" alt="Imagem do Robo Delta">
+          <div>
+            <h3>Robo Delta</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">paralelo</span>
+              <span class="etiqueta">muito rapido</span>
+              <span class="etiqueta">embalagem</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/delta.html">Abrir pagina</a>
+        </div>
+      </article>
+
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/polar.svg" alt="Imagem do Robo Polar">
+          <div>
+            <h3>Robo Polar</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">esferico</span>
+              <span class="etiqueta">alcance</span>
+              <span class="etiqueta">fundicao</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/polar.html">Abrir pagina</a>
+        </div>
+      </article>
+
+      <article class="card-robo">
+        <div class="topo-card">
+          <img src="assets/img/cobot.svg" alt="Imagem do Robo Colaborativo">
+          <div>
+            <h3>Robo Colaborativo</h3>
+            <div class="etiquetas">
+              <span class="etiqueta">seguro</span>
+              <span class="etiqueta">flexivel</span>
+              <span class="etiqueta">inspecao</span>
+            </div>
+          </div>
+        </div>
+        <div class="bloco">
+          <p><strong>Veja os detalhes:</strong></p>
+          <a class="botao-sec" href="robos/cobot.html">Abrir pagina</a>
+        </div>
+      </article>
+    </section>
 
     <section class="comparativo" id="comparativo">
       <h2>Comparativo rapido</h2>
       <table>
         <thead>
-          <tr><th>Tipo</th><th>Movimento</th><th>Ponto forte</th><th>Aplicacao comum</th></tr>
+          <tr>
+            <th>Tipo</th>
+            <th>Movimento</th>
+            <th>Ponto forte</th>
+            <th>Aplicacao comum</th>
+          </tr>
         </thead>
-        <tbody id="tabelaComparativo"></tbody>
+        <tbody>
+          <tr><td>Robo Cartesiano</td><td>Linear X, Y e Z</td><td>Precisao e simplicidade</td><td>Paletizacao</td></tr>
+          <tr><td>Robo SCARA</td><td>Rotacao horizontal + eixo Z</td><td>Velocidade</td><td>Montagem</td></tr>
+          <tr><td>Robo Articulado</td><td>Juntas rotativas</td><td>Flexibilidade</td><td>Soldagem</td></tr>
+          <tr><td>Robo Cilindrico</td><td>Rotacao + movimento radial e vertical</td><td>Acesso ao redor da base</td><td>Carga e descarga</td></tr>
+          <tr><td>Robo Delta</td><td>Cinematica paralela</td><td>Velocidade extrema</td><td>Embalagem</td></tr>
+          <tr><td>Robo Polar</td><td>Rotacao + inclinacao + extensao</td><td>Alcance esferico</td><td>Fundicao</td></tr>
+          <tr><td>Robo Colaborativo</td><td>Juntas sensorizadas</td><td>Trabalho perto de pessoas</td><td>Montagem e inspecao</td></tr>
+        </tbody>
       </table>
     </section>
   </main>
@@ -82,3 +223,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
